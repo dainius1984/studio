@@ -9,19 +9,19 @@ const TestimonialsSection = () => {
       name: "Anna K.",
       rating: 5,
       text: "Fantastyczne rezultaty już po pierwszym miesiącu! Polecam każdemu, kto chce zadbać o swoją sylwetkę.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&q=80"
+      image: require("../img/1.jpg")
     },
     {
       name: "Magdalena W.",
       rating: 5,
       text: "Profesjonalna obsługa i nowoczesny sprzęt. Studio Figura to najlepsza inwestycja w siebie!",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&q=80"
+      image: require("../img/2.jpg")
     },
     {
       name: "Karolina M.",
       rating: 5,
       text: "Wreszcie znalazłam miejsce, gdzie czuję się komfortowo. Efekty przeszły moje oczekiwania!",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=60&q=80"
+      image: require("../img/3.jpg")
     }
   ];
 
