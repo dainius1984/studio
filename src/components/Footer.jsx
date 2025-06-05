@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                +48 123 456 789
+                503 537 701
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1" />
-                ul. Stablowice 123<br />Wrocław
+                Brodzka 193<br />54-067 Wrocław
               </li>
             </ul>
           </div>

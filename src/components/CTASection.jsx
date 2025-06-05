@@ -17,19 +17,19 @@ const CTASection = () => {
             <ContactInfoCard 
               icon={Phone}
               title="Zadzwoń"
-              description="+48 123 456 789"
+              description="503 537 701"
             />
             <ContactInfoCard 
               icon={Mail}
               title="Napisz"
-              description="kontakt@studiafigura-stablowice.pl"
+              description="kontakt@studiofigura-stablowice.pl"
             />
             <ContactInfoCard 
               icon={MapPin}
               title="Odwiedź"
               description={
                 <div>
-                  ul. Stablowice 123<br />Wrocław
+                  Brodzka 193<br />54-067 Wrocław
                 </div>
               }
             />
