@@ -53,7 +53,7 @@ const LeadModal = ({ isOpen, onClose }) => {
                 <label className="block font-semibold mb-1">Imię*</label>
                 <input
                   type="text"
-                  className={`w-full border-2 rounded-xl px-4 py-2 focus:outline-none focus:border-orange-500 transition ${errors.name ? "border-red-400" : "border-gray-200"}`}
+                  className={`w-full border-2 rounded-2xl px-5 py-3 bg-orange-50/60 shadow-sm focus:shadow-lg focus:outline-none focus:border-orange-500 focus:bg-white transition placeholder-gray-400 text-lg ${errors.name ? "border-red-400" : "border-gray-200"}`}
                   value={name}
                   onChange={e => setName(e.target.value)}
                   required
@@ -64,7 +64,7 @@ const LeadModal = ({ isOpen, onClose }) => {
                 <label className="block font-semibold mb-1">Numer telefonu*</label>
                 <input
                   type="tel"
-                  className={`w-full border-2 rounded-xl px-4 py-2 focus:outline-none focus:border-orange-500 transition ${errors.phone ? "border-red-400" : "border-gray-200"}`}
+                  className={`w-full border-2 rounded-2xl px-5 py-3 bg-orange-50/60 shadow-sm focus:shadow-lg focus:outline-none focus:border-orange-500 focus:bg-white transition placeholder-gray-400 text-lg ${errors.phone ? "border-red-400" : "border-gray-200"}`}
                   value={phone}
                   onChange={e => setPhone(e.target.value)}
                   required
