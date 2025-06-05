@@ -9,19 +9,19 @@ const TestimonialsSection = () => {
       name: "Anna K.",
       rating: 5,
       text: "Po kilku zabiegach widzę realną poprawę sylwetki. Atmosfera w Studio Figura jest bardzo przyjazna, a personel naprawdę się stara.",
-      image: require("../img/1.jpg")
+      image: process.env.PUBLIC_URL + "/img/1.jpg"
     },
     {
       name: "Magdalena W.",
       rating: 5,
       text: "Nie spodziewałam się takich efektów! Zabiegi są komfortowe, a każda wizyta przebiega w miłej atmosferze.",
-      image: require("../img/2.jpg")
+      image: process.env.PUBLIC_URL + "/img/2.jpg"
     },
     {
       name: "Karolina M.",
       rating: 5,
       text: "Polecam każdemu, kto chce zadbać o siebie. Indywidualne podejście i profesjonalizm na najwyższym poziomie.",
-      image: require("../img/3.jpg")
+      image: process.env.PUBLIC_URL + "/img/3.jpg"
     }
   ];
 

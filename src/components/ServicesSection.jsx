@@ -7,7 +7,8 @@ const ServicesSection = () => {
       title: "Kryolipoliza",
       description: "Nieinwazyjne usuwanie tkanki tłuszczowej poprzez zamrażanie",
       icon: "❄️",
-      features: ["Bez bólu", "Bez przestojów", "Długotrwałe efekty"]
+      features: ["Bez bólu", "Bez przestojów", "Długotrwałe efekty"],
+      video: process.env.PUBLIC_URL + "/video/1.mp4"
     },
     {
       title: "Kavitacja",
@@ -43,6 +44,7 @@ const ServicesSection = () => {
               description={service.description}
               icon={service.icon}
               features={service.features}
+              video={service.video}
             />
           ))}
         </div>
