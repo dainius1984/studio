@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
     {
       name: "Anna K.",
       rating: 5,
-      text: "Po kilku zabiegach widzę realną poprawę sylwetki. Atmosfera w Studio Figura jest bardzo przyjazna, a personel naprawdę się stara.",
+      text: "Po kilku zabiegach widzę realną poprawę sylwetki. Atmosfera w Studio Figura Wrocław Stabłowice jest bardzo przyjazna, a personel naprawdę się stara.",
       image: process.env.PUBLIC_URL + "/img/1.jpg"
     },
     {

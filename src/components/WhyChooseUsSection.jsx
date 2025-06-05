@@ -26,7 +26,7 @@ const WhyChooseUsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Dlaczego <span className="text-orange-500">Studio Figura?</span>
+              Dlaczego <span className="text-orange-500">Studio Figura Wrocław Stabłowice?</span>
             </h2>
             <div className="space-y-6">
               {reasons.map((item, index) => (

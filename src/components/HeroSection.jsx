@@ -9,8 +9,8 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Studio Figura
-              <span className="block text-orange-500">Stablowice</span>
+              Studio Figura Wrocław
+              <span className="block text-orange-500">Stabłowice</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Odkryj swoje piękno i zdrowie w nowoczesnym studio kosmetycznym. 
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <div className="bg-gradient-to-br from-orange-200 to-orange-300 rounded-3xl p-8 transform rotate-3 hover:rotate-1 transition-transform duration-300">
               <img 
                 src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Studio Figura Stablowice" 
+                alt="Studio Figura Wrocław Stabłowice" 
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
             </div>

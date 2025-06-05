@@ -10,7 +10,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-gray-800">
-              Studio Figura <span className="text-orange-500">Stablowice</span>
+              Studio Figura Wrocław <span className="text-orange-500">Stabłowice</span>
             </h1>
           </div>
           {/* Desktop Menu */}

@@ -22,7 +22,7 @@ const CTASection = () => {
             <ContactInfoCard 
               icon={Mail}
               title="Napisz"
-              description="kontakt@studiofigura-stablowice.pl"
+              description="kontakt@studiofigura-wroclaw-stablowice.pl"
             />
             <ContactInfoCard 
               icon={MapPin}

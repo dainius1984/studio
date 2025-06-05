@@ -4,7 +4,7 @@ import { Facebook, Youtube, Instagram, MapPin } from "lucide-react";
 const sidebarLinks = [
   {
     icon: <Facebook size={24} />,
-    url: "https://www.facebook.com/StudioFiguraStablowice",
+    url: "https://www.facebook.com/StudioFiguraWroclawStablowice",
     label: "Facebook",
     bg: "bg-[#3b5998]",
   },
