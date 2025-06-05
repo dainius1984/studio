@@ -41,9 +41,10 @@ const TestimonialsSection = () => {
         <div className="relative flex justify-center items-center min-h-[350px]">
           <div className="transition-all duration-500 ease-in-out bg-white/20 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-xl w-full max-w-xl mx-auto flex flex-col items-center animate-fade-in">
             <img 
-              src={testimonials[currentTestimonial].image} 
+              src={testimonials[currentTestimonial].image}
               alt={testimonials[currentTestimonial].name}
               className="w-24 h-24 rounded-full border-4 border-white/40 object-cover mb-4 shadow-lg"
+              onLoad={() => console.log('Loaded:', testimonials[currentTestimonial].image)}
             />
             <div className="flex justify-center mb-2">
               {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
