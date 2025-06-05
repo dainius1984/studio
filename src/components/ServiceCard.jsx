@@ -17,23 +17,25 @@ const ServiceCard = ({ title, description, icon, features, video }) => {
           style={{ objectFit: 'cover' }}
         />
       )}
-      <div className="relative z-10">
-        <div className="text-4xl mb-4">{icon}</div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4">{title}</h3>
-        <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
+      <div className="absolute -inset-4 bg-white/80 dark:bg-black/60 z-0 pointer-events-none rounded-3xl" />
+      <div className="relative z-10 text-center">
+        <div className="mb-4 flex flex-col items-center">
+          {icon}
+        </div>
+        <h3 className="text-2xl font-bold text-gray-800 mb-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.12)' }}>{title}</h3>
+        <p className="text-gray-700 mb-6 leading-relaxed text-base font-medium" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.10)' }}>{description}</p>
         <ul className="space-y-2 mb-6">
           {features.map((feature, idx) => (
-            <li key={idx} className="flex items-center text-gray-700">
+            <li key={idx} className="flex items-center text-gray-700 justify-center" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.10)' }}>
               <ChevronRight className="w-4 h-4 text-orange-500 mr-2" />
               {feature}
             </li>
           ))}
         </ul>
-        <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-full font-semibold transition-colors">
+        <button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-full font-semibold transition-colors shadow-md" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.10)' }}>
           Dowiedz się więcej
         </button>
       </div>
-      <div className="absolute -inset-4 bg-white/60 z-0 pointer-events-none rounded-3xl" />
     </div>
   );
 };

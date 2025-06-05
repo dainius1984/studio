@@ -1,26 +1,37 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
+import { CubeIcon, BoltIcon, SparklesIcon } from '@heroicons/react/24/solid';
+
+const iconStyle = {
+  width: 32,
+  height: 32,
+  color: '#FF6200',
+  display: 'block',
+  margin: '0 auto',
+};
 
 const ServicesSection = () => {
   const services = [
     {
       title: "Kryolipoliza",
       description: "Nieinwazyjne usuwanie tkanki tłuszczowej poprzez zamrażanie",
-      icon: "❄️",
+      icon: <CubeIcon style={iconStyle} />,
       features: ["Bez bólu", "Bez przestojów", "Długotrwałe efekty"],
       video: process.env.PUBLIC_URL + "/video/1.mp4"
     },
     {
       title: "Kavitacja",
       description: "Ultradźwiękowe modelowanie sylwetki i redukcja cellulitu",
-      icon: "🌊",
-      features: ["Szybkie efekty", "Bezpieczne", "Komfortowe"]
+      icon: <BoltIcon style={iconStyle} />,
+      features: ["Szybkie efekty", "Bezpieczne", "Komfortowe"],
+      video: process.env.PUBLIC_URL + "/video/2.mp4"
     },
     {
       title: "Vacustyler",
       description: "Stymulacja krążenia i ujędrnienie skóry",
-      icon: "💪",
-      features: ["Poprawa krążenia", "Ujędrnienie", "Detoks"]
+      icon: <SparklesIcon style={iconStyle} />,
+      features: ["Poprawa krążenia", "Ujędrnienie", "Detoks"],
+      video: process.env.PUBLIC_URL + "/video/3.mp4"
     }
   ];
 
