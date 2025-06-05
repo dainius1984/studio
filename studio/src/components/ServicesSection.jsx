@@ -1,0 +1,54 @@
+import React from 'react';
+import ServiceCard from './ServiceCard';
+
+const ServicesSection = () => {
+  const services = [
+    {
+      title: "Kryolipoliza",
+      description: "Nieinwazyjne usuwanie tkanki tłuszczowej poprzez zamrażanie",
+      icon: "❄️",
+      features: ["Bez bólu", "Bez przestojów", "Długotrwałe efekty"]
+    },
+    {
+      title: "Kavitacja",
+      description: "Ultradźwiękowe modelowanie sylwetki i redukcja cellulitu",
+      icon: "🌊",
+      features: ["Szybkie efekty", "Bezpieczne", "Komfortowe"]
+    },
+    {
+      title: "Vacustyler",
+      description: "Stymulacja krążenia i ujędrnienie skóry",
+      icon: "💪",
+      features: ["Poprawa krążenia", "Ujędrnienie", "Detoks"]
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Nasze <span className="text-orange-500">Usługi</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Kompleksowa oferta zabiegów dla każdego, kto dba o swoje ciało i zdrowie
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <ServiceCard 
+              key={index}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+              features={service.features}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection; 
