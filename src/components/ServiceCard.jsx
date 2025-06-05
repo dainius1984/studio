@@ -3,10 +3,10 @@ import { ChevronRight } from 'lucide-react';
 
 const ServiceCard = ({ title, description, icon, features, video }) => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-white to-orange-50 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-orange-100">
+    <div className="relative overflow-hidden bg-gradient-to-br from-white to-orange-50 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-orange-100 group">
       {video && (
         <video
-          className="absolute inset-0 w-full h-full object-cover z-0 blur-sm opacity-60"
+          className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] object-cover z-0 transition-all duration-500 group-hover:blur-sm group-hover:opacity-80 blur-[3px] opacity-60 scale-125 group-hover:scale-[1.35]"
           src={video}
           autoPlay
           loop
@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, icon, features, video }) => {
           playsInline
           preload="auto"
           poster=""
-          style={{ filter: 'blur(8px)', objectFit: 'cover' }}
+          style={{ objectFit: 'cover' }}
         />
       )}
       <div className="relative z-10">
@@ -33,7 +33,7 @@ const ServiceCard = ({ title, description, icon, features, video }) => {
           Dowiedz się więcej
         </button>
       </div>
-      <div className="absolute inset-0 bg-white/60 z-0" />
+      <div className="absolute -inset-4 bg-white/60 z-0 pointer-events-none rounded-3xl" />
     </div>
   );
 };

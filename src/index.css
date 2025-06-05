@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes pop-glow {
+  0% { transform: scale(0.7); box-shadow: 0 0 0 0 #FF6200AA, 0 0 0 0 #fff; }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fade-in-tooltip-smooth {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-fade-in-tooltip-smooth {
+  animation: fade-in-tooltip-smooth 1s cubic-bezier(.4,0,.2,1);
+}
